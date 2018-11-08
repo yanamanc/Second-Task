@@ -1,11 +1,9 @@
-my_array = Array.new
+my_array = []
 i = 10
 
-while i<105
+while i <= 100
   my_array.push(i)
   i += 5
 end
 
-for number in my_array
-  puts number
-end
+puts my_array

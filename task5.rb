@@ -1,9 +1,7 @@
-vowels = [ "a", "e", "i", "o", "u" ]
+vowels = %w(a e o u i)
 result = {} 
 
-("a".."z").each_with_index { |item, index|
-  if vowels.include?(item)
-  	result[index + 1] = item 
-  end
-}
+("a".."z").each.with_index(1) do |item, index|
+  	result[index] = item if vowels.include?(item)
+end
 puts "#{result}"
