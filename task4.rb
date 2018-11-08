@@ -23,7 +23,6 @@ year = gets.chomp.to_i
 if (year % 400 == 0) || ((year % 4 == 0) && !(year % 100 == 0))
   months["February"] = 29
 end
-
  
 months.each {|key, value| 
   if key == month
@@ -31,8 +30,6 @@ months.each {|key, value|
   end
   day += value
 }
-
-
 
 print day
   
